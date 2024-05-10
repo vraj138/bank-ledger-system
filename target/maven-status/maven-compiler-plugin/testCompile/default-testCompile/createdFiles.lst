@@ -1,0 +1,5 @@
+dev/codescreen/TransactionServiceApplicationTest.class
+dev/codescreen/transactionservice/controller/AuthorizationControllerUnitTest.class
+dev/codescreen/transactionservice/service/AuthorizationServiceTest.class
+dev/codescreen/transactionservice/controller/LoadControllerUnitTest.class
+dev/codescreen/transactionservice/service/LoadServiceTest.class
