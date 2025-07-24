@@ -32,16 +32,15 @@ public class LoadService {
     // debitorcredit))
 
     @Autowired
-    public LoadService(BalanceRepository balanceRepository, 
-                       EventsTableRepository eventsTableRepository, 
-                       TransactionTableRepository transactionTableRepository) {
+    public LoadService(BalanceRepository balanceRepository,
+            EventsTableRepository eventsTableRepository,
+            TransactionTableRepository transactionTableRepository) {
         this.balanceRepository = balanceRepository;
         this.eventsTableRepository = eventsTableRepository;
         this.transactionTableRepository = transactionTableRepository;
     }
 
-    
-    /** 
+    /**
      * @param loadRequest
      * @return LoadResponse
      * @throws Exception
@@ -76,7 +75,7 @@ public class LoadService {
 
         // Create an event record
         EventsTable event = new EventsTable();
-        
+
         event.setTimestamp(LocalDateTime.now());
         event.setUserId(balance);
         event.setMessageId(messageId);
