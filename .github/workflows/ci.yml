@@ -29,5 +29,5 @@ jobs:
           ${{ runner.os }}-maven-
 
     - name: Build and run tests with 'test' profile
-      run: ./mvnw clean test -Dspring.profiles.active=test
+      run: mvn clean test -Dspring.profiles.active=test
 
